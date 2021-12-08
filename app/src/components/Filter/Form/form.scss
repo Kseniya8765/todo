@@ -1,35 +1,55 @@
-$font: "Architects Daughter", sans-serif;
-$radius: 8px;
-$color:#db7c3c;
-
+$font: "Open Sans", sans-serif;
+$color:#E5E5E5;
+$primaryClr:#550DC9;
+.aside{
+  width: 52px;
+  height: 100vh;
+  background-color: $primaryClr;
+}
+.wrp{
+  display: flex;
+  align-items: flex-start;
+ width: 1900px;
+}
+.menu-wrp{
+  width: 52px;
+height: 32px;
+background-color: #440BA0;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 24px;
+}
 .form-container {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 15px;
-
+  margin-top: 24px;
+  width: 100%;
   input{
   outline: none;
-  border: 3px dashed $color;
+  border: 1px solid $color;
   background-color: transparent;
   font-family: $font;
-  font-size: 1.3rem;
-  padding: 10px 15px;
-  width: 45%;
-  color: #494a4b;
-  border-radius: $radius;
+  font-size: 14px;
+  padding: 5px 12px;
+  max-width: 1170px;
+  width: 100%;
+  color: #CACACA;
   margin-right: 15px;
+  margin-left: 24px;
   }
   button{
-    border: 1px solid $color;
-    border-radius: $radius;
-    width:100px;
-    height: 50px;
+    border: 1px solid $primaryClr;
+    width:50px;
+    height: 29px;
     font-family: $font;
-    font-size: 0.9rem;
-    margin-right: 15px;
+    font-size: 14px;
+    margin-right: 19px;
     cursor: pointer;
+    color: #fff;
+    background-color: $primaryClr;
+    border-radius: 4px;
     &:hover{
-      background-color: rgb(198, 202, 207);
+      background-color: rgb(165, 142, 202);
     }
   }
   

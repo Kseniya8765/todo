@@ -1,14 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Quicksand&display=swap');
 
-h1{
-    width: 80%;
-    margin: 30px 0;
-    background-color: #fdc66e;
-    border-radius: 10px;
-    border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
-    padding: 2rem 1.2rem;
-    color: #494a4b;
-    text-align: center;
-    font-weight: 700;
-    font-family: "Architects Daughter", sans-serif;
-}
+.title{
+    max-width: 1920px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
+  .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 16px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .logo{
+    display: flex; 
+    align-items: center;
+  }
+  h1{
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 24px;
+  color: #000000;
+  }
+  
+  .dropdown {
+      position: relative;
+      width: 166px;
+    height: 32px;
+      background: #FFFFFF;
+      border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+  }
+  option,
+  select {
+      color: #373737;
+    border: none;
+    font-family: "Open Sans";
+    font-size: 14px;
+  line-height: 19px;
+  color: #373737;
+  position: relative;
+  }
+  .dropdown:focus,
+  .dropdown:hover {
+      color: #373737;
+  }
+  .dropdown select{
+      appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+      width: 126px;
+    height: 32px;
+      background: none;
+  }
+  

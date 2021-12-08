@@ -7,19 +7,19 @@ import { ErrorBoundary } from "../error/ErrorBoundary";
 
 const getTodo = () => [
   {
-    taskName: "Buy flowers",
+    taskName: "Add Icon to Dashboard",
     id: "1",
     important: false,
     active: true
   },
   {
-    taskName: "Go shopping",
+    taskName: "Create To-Do List",
     id: "2",
     important: false,
     active: false
   },
   {
-    taskName: "learn react",
+    taskName: "Add Icon to Das",
     id: "3",
     important: true,
     active: true
