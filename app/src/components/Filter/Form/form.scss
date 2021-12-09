@@ -1,45 +1,42 @@
 $font: "Open Sans", sans-serif;
-$color:#E5E5E5;
-$primaryClr:#550DC9;
-.aside{
-  width: 52px;
-  height: 100vh;
-  background-color: $primaryClr;
-}
-.wrp{
+$color: #e5e5e5;
+$primaryClr: #550dc9;
+
+.wrp {
   display: flex;
   align-items: flex-start;
- width: 1900px;
+  max-width: 1900px;
+  width: 100%;
 }
-.menu-wrp{
+.menu-wrp {
   width: 52px;
-height: 32px;
-background-color: #440BA0;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 24px;
+  height: 32px;
+  background-color: #440ba0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
 }
 .form-container {
   display: flex;
   margin-top: 24px;
   width: 100%;
-  input{
-  outline: none;
-  border: 1px solid $color;
-  background-color: transparent;
-  font-family: $font;
-  font-size: 14px;
-  padding: 5px 12px;
-  max-width: 1170px;
-  width: 100%;
-  color: #CACACA;
-  margin-right: 15px;
-  margin-left: 24px;
+  input {
+    outline: none;
+    border: 1px solid $color;
+    background-color: transparent;
+    font-family: $font;
+    font-size: 14px;
+    padding: 5px 12px;
+    max-width: 1170px;
+    width: 100%;
+    color: #cacaca;
+    margin-right: 15px;
+    margin-left: 24px;
   }
-  button{
+  button {
     border: 1px solid $primaryClr;
-    width:50px;
+    width: 50px;
     height: 29px;
     font-family: $font;
     font-size: 14px;
@@ -48,9 +45,8 @@ margin-top: 24px;
     color: #fff;
     background-color: $primaryClr;
     border-radius: 4px;
-    &:hover{
+    &:hover {
       background-color: rgb(165, 142, 202);
     }
   }
-  
 }

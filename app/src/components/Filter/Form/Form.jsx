@@ -1,7 +1,7 @@
 import "../Form/form.scss";
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import menu from "./img/Tasks.png";
+
 
 export const Form = (props) => {
   const [inputAdd, setInputAdd] = useState("");
@@ -18,7 +18,7 @@ export const Form = (props) => {
 
   return (
     <div className="wrp">
-    <div className="aside"><div className="menu-wrp"><img src={menu} alt="img" /></div></div>
+  
     <div className="form-container">
       <input
         placeholder="+ Add a task, press Enter to save"

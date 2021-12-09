@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Quicksand&display=swap");
+
+$font: "Open Sans", sans-serif;
+$size: 16px;
+$black: #000000;
+$white: #ffffff;
+$grey: #373737;
+$mainCLR: #550dc9;
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+.text2 {
+  font-family: $font;
+  font-size: 12px;
+  line-height: $size;
+  color: $mainCLR;
+  margin-top: 12px;
+}
+.text {
+  font-family: $font;
+  font-weight: 600;
+  font-size: $size;
+  line-height: 22px;
+  color: $grey;
+  margin-top: $size;
+  margin-bottom: 8px;
+  span {
+    font-family: $font;
+    font-weight: 600;
+    font-size: $size;
+    line-height: 22px;
+    color: $grey;
+  }
+}
+
+.aside {
+  width: 52px;
+  height: 100vh;
+  background-color: $mainCLR;
+}
+.flx {
+  display: flex;
+}
+.wrp-task {
+  margin-left: 24px;
+  width: 100%;
+}

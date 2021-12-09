@@ -2,15 +2,15 @@ import "../Priority/priority.scss";
 import PropTypes from 'prop-types';
 import React, { useContext } from "react";
 import {TodoAppContext} from '../../../App/context';
+import copy from "./img/copy.png";
 
-export const Priority = ({ btnContent, id }) => {
+export const Priority = ({ id }) => {
   const context = useContext(TodoAppContext);
   const {importantTask} = context;
 
   return (
-    <button className="important" onClick={() => importantTask(id)}>
-      {btnContent}
-    </button>
+      <img src={copy} className="important" onClick={() => importantTask(id)} alt="img" />
+    
   );
 };
 

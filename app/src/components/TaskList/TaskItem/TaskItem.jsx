@@ -1,6 +1,7 @@
 import "../TaskItem/item.scss";
 import { Delete } from "../TaskItem/Delete/Delete";
 import { Priority } from "../TaskItem/Priority/Priority";
+import { Edit } from "../TaskItem/Edit/Edit";
 import PropTypes from 'prop-types';
 import React, { useContext } from "react";
 import {TodoAppContext} from '../../App/context';
@@ -15,22 +16,30 @@ export const TaskItem = ({
   const {inactiveTask} = context;
 
   const style = {
-    fontWeight: important === true ? "bold" : "normal",
     textDecoration: active === true ? "none" : "line-through",
     cursor: "pointer"
   };
 
-  const btnContent = important ? "-" : "!";
-
-  return (
-    <div className="todoItem">
-      <p style={style} onClick={() => inactiveTask(id)}>
-        {taskName}
-      </p>
+  return (  
+      <div className="box">
+          <div className="box-inp">
+            <input
+              type="checkbox"
+              className="custom-checkbox"
+              id={id}
+              name="happy"
+              value="yes"
+              onClick={() => inactiveTask(id)}
+            ></input>
+            <label style={style} for={id}>{taskName} </label>
+          <div className="icons">
+      <Edit id={id}/>
+      <Priority id={id} />
       <Delete id={id} />
-      <p className="priority">{important}</p>
-      <Priority btnContent={btnContent} id={id} />
-    </div>
+          </div>
+          </div>
+        </div>
+    
   );
 };
 
