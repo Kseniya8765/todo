@@ -86,18 +86,7 @@ export const App = () => {
     setTodo(newTodo);
   };
 
-  const importantTask = (inputId) => {
-    const newTodo = todo.map((item) => {
-      const { id, important } = item;
-
-      return {
-        ...item,
-        important: inputId === id ? !important : important
-      };
-    });
-
-    setTodo(newTodo);
-  };
+  
   const deleteTask = (inputId) => {
     const newTodo = todo.filter((item) => {
       const { id } = item;
@@ -118,7 +107,6 @@ export const App = () => {
   };
 
   const propsDrill = {
-    importantTask: importantTask,
     deleteTask: deleteTask,
     inactiveTask: inactiveTask,
     btnHandler: btnHandler,

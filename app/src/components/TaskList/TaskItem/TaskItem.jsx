@@ -1,6 +1,6 @@
 import "../TaskItem/item.scss";
 import { Delete } from "../TaskItem/Delete/Delete";
-import { Priority } from "../TaskItem/Priority/Priority";
+import { Copy} from "../TaskItem/Priority/Copy";
 import { Edit } from "../TaskItem/Edit/Edit";
 import PropTypes from 'prop-types';
 import React, { useContext } from "react";
@@ -34,7 +34,7 @@ export const TaskItem = ({
             <label style={style} for={id}>{taskName} </label>
           <div className="icons">
       <Edit id={id}/>
-      <Priority id={id} />
+      <Copy id={id} />
       <Delete id={id} />
           </div>
           </div>
